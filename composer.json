@@ -1,0 +1,28 @@
+{
+    "name": "lyrixx/twitter-sdk",
+    "description": "A simple twitter SDK to interact with Twitter api (1.1)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grégoire Pineau",
+            "email": "lyrixx@lyrixx.info"
+        }
+    ],
+    "require": {
+        "guzzle/http": "~3.0",
+        "psr/log": "~1.0"
+    },
+    "require-dev": {
+        "monolog/monolog": "~1.0",
+        "guzzle/plugin-mock": "~3.0"
+    },
+    "autoload": {
+        "psr-0": { "Lyrixx": "" }
+    },
+    "target-dir": "Lyrixx",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}

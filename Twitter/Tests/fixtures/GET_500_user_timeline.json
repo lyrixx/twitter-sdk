@@ -1,0 +1,9 @@
+HTTP/1.1 500 Internal Server Error
+content-length: 61
+content-type: application/json; charset=utf-8
+date: Sat, 13 Jul 2013 13:59:43 UTC
+server: tfe
+set-cookie: guest_id=v1%3A137372398345597593; Domain=.twitter.com; Path=/; Expires=Mon, 13-Jul-2015 13:59:43 UTC
+strict-transport-security: max-age=631138519
+
+{"errors":[{"message":"Invalid or expired token","code":89}]}
