@@ -82,7 +82,7 @@ class Twitter
 
             $statusCode = $e->getResponse()->getStatusCode();
             $reasonPhrase = $e->getResponse()->getReasonPhrase();
-            $message = sprintf('The request in not valid (status code: "%d", reason phrase: "%s").', $statusCode, $reasonPhrase);
+            $message = sprintf('The request is not valid (status code: "%d", reason phrase: "%s").', $statusCode, $reasonPhrase);
 
             throw new ApiClientException($message, 0, $e);
 
