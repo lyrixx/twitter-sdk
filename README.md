@@ -1,6 +1,8 @@
 Twitter SDK
 ===========
 
+[![Build Status](https://travis-ci.org/lyrixx/twitter-sdk.png?branch=master)](https://travis-ci.org/lyrixx/twitter-sdk)
+
 Installation
 ------------
 
