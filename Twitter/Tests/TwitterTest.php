@@ -55,7 +55,7 @@ class TwitterTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @expectedException Lyrixx\Twitter\Exception\ApiClientException
-     * @expectedExceptionMessage The request in not valid (status code: "401", reason phrase: "Unauthorized").
+     * @expectedExceptionMessage The request is not valid (status code: "401", reason phrase: "Unauthorized").
      */
     public function testQueryWith401Response()
     {
