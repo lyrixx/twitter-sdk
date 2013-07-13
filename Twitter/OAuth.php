@@ -98,6 +98,10 @@ class OAuth
             return $v;
         }, $oauthParameters);
 
-        return http_build_query($oauthParameters, '', '&', PHP_QUERY_RFC3986);
+        if (version_compare(PHP_VERSION, '5.4.0', '>=')) {
+            return http_build_query($oauthParameters, '', '&', PHP_QUERY_RFC3986);
+        }
+
+        return str_replace('+', '%20', http_build_query($oauthParameters));
     }
 }
