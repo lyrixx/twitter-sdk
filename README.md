@@ -4,7 +4,7 @@ Twitter SDK
 Installation
 ------------
 
-    composer require lyrixx/twitter-sdk:0.1@dev
+    composer require lyrixx/twitter-sdk:0.1.*@dev
 
 Usage
 -----
@@ -39,7 +39,7 @@ Usage
         $response = $twitter->query('POST', 'statuses/update');
     } catch (Lyrixx\Twitter\Exception\ApiClientException $e) {
         $response = $e->getResponse();
-        $errors = json_decode($response->getBody(), true); // Missing required parameter: status
+        $errors = json_decode($response->getBody(), true); // {"errors":[{"code":170,"message":"Missing required parameter: status"}]}
     }
 
     // No exception are throwed, it just works
