@@ -68,6 +68,11 @@ class Twitter
         return $this->client->createRequest($method, $url, $headers, $parameters);
     }
 
+    public function setClient(Client $client)
+    {
+        $this->client = $client;
+    }
+
     private function send(Request $request)
     {
         try {
