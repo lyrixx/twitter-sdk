@@ -1,6 +1,7 @@
 Twitter SDK
 ===========
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/5ef06b8a-c6b6-4f53-8568-3c45c73200ca/mini.png)](https://insight.sensiolabs.com/projects/5ef06b8a-c6b6-4f53-8568-3c45c73200ca)
 [![Build Status](https://travis-ci.org/lyrixx/twitter-sdk.png?branch=master)](https://travis-ci.org/lyrixx/twitter-sdk)
 
 Installation
