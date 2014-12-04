@@ -22,7 +22,7 @@
     "target-dir": "Lyrixx",
     "extra": {
         "branch-alias": {
-            "dev-master": "0.3-dev"
+            "dev-master": "1.x-dev"
         }
     }
 }
