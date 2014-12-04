@@ -6,7 +6,7 @@ Twitter SDK
 Installation
 ------------
 
-    composer require lyrixx/twitter-sdk:0.1.*@dev
+    composer require lyrixx/twitter-sdk
 
 Usage
 -----
