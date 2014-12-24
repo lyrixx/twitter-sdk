@@ -9,13 +9,14 @@ use Guzzle\Http\Message\Request;
 use Lyrixx\Twitter\Exception\ApiClientException;
 use Lyrixx\Twitter\Exception\ApiServerException;
 use Psr\Log\LoggerInterface;
+use Psr\Log\LoggerAwareInterface;
 
 /**
  * Twitter.
  *
  * @author Grégoire Pineau <lyrixx@lyrixx.info>
  */
-class Twitter
+class Twitter implements LoggerAwareInterface
 {
     const END_POINT = 'https://api.twitter.com/1.1';
 
@@ -71,6 +72,11 @@ class Twitter
     public function setClient(Client $client)
     {
         $this->client = $client;
+    }
+
+    public function setLogger(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
     }
 
     private function send(Request $request)
