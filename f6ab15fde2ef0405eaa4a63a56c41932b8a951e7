@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------
+
+by glynnforrest at 2014-12-25T22:31:24Z
+
+Good idea about testing with reflection, I've removed `getLogger()`. I also took out the docblock for `setLogger()` as it inherits from the interface anyway.
+
+Thanks!
