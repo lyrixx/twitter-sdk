@@ -105,4 +105,17 @@ class TwitterTest extends \PHPUnit_Framework_TestCase
         $this->mockPlugin = null;
         $this->logger = null;
     }
+
+    public function testSetLogger()
+    {
+        $this->assertInstanceOf('Psr\Log\LoggerAwareInterface', $this->twitter);
+
+        $loggerProperty = new \ReflectionProperty($this->twitter, 'logger');
+        $loggerProperty->setAccessible(true);
+
+        $this->assertSame($this->logger, $loggerProperty->getValue($this->twitter));
+        $newLogger = $this->getMock('Psr\Log\LoggerInterface');
+        $this->twitter->setLogger($newLogger);
+        $this->assertSame($newLogger, $loggerProperty->getValue($this->twitter));
+    }
 }
